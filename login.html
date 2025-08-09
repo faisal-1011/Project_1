@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook – log in or sign up</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: #f0f2f5;
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            min-height: 100vh;
+        }
+        .fb-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            gap: 60px;
+        }
+        .fb-left {
+            max-width: 500px;
+        }
+        .fb-logo {
+            color: #1877f2;
+            font-size: 60px;
+            font-weight: 700;
+            letter-spacing: -3px;
+            margin-bottom: 10px;
+        }
+        .fb-desc {
+            font-size: 28px;
+            color: #1c1e21;
+            margin-bottom: 40px;
+            line-height: 32px;
+        }
+        .fb-login-box {
+            background: #fff;
+            padding: 24px 16px 20px 16px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            width: 360px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .fb-login-box input[type="text"],
+        .fb-login-box input[type="password"] {
+            width: 100%;
+            padding: 14px 16px;
+            border: 1px solid #dddfe2;
+            border-radius: 6px;
+            font-size: 17px;
+            background: #f5f6f7;
+            margin-bottom: 10px;
+        }
+        .fb-login-box input:focus {
+            border-color: #1877f2;
+            outline: none;
+        }
+        .fb-login-box button[type="submit"] {
+            background: #1877f2;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            font-size: 20px;
+            font-weight: 700;
+            padding: 12px 0;
+            cursor: pointer;
+            margin-bottom: 10px;
+            transition: background 0.2s;
+        }
+        .fb-login-box button[type="submit"]:hover {
+            background: #166fe5;
+        }
+        .fb-login-box .fb-forgot {
+            color: #1877f2;
+            text-align: center;
+            text-decoration: none;
+            font-size: 14px;
+            margin-bottom: 16px;
+            display: block;
+        }
+        .fb-login-box .fb-divider {
+            border-bottom: 1px solid #dadde1;
+            margin: 16px 0;
+        }
+        .fb-login-box .fb-create-btn {
+            background: #42b72a;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            font-size: 17px;
+            font-weight: 700;
+            padding: 12px 0;
+            cursor: pointer;
+            margin: 0 auto;
+            width: 60%;
+            display: block;
+            transition: background 0.2s;
+        }
+        .fb-login-box .fb-create-btn:hover {
+            background: #36a420;
+        }
+        .fb-bottom-text {
+            text-align: center;
+            margin-top: 28px;
+            font-size: 14px;
+        }
+        .fb-bottom-text a {
+            color: #1c1e21;
+            font-weight: 700;
+            text-decoration: none;
+        }
+        @media (max-width: 900px) {
+            .fb-container {
+                flex-direction: column;
+                gap: 20px;
+                padding: 40px 0;
+            }
+            .fb-left {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="fb-container">
+        <div class="fb-left">
+            <div class="fb-logo">facebook</div>
+            <div class="fb-desc">
+                Facebook helps you connect and share<br>
+                with the people in your life.
+            </div>
+        </div>
+        <div>
+            <form class="fb-login-box">
+                <input type="text" placeholder="Email address or phone number" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Log In</button>
+                <a href="#" class="fb-forgot">Forgotten password?</a>
+                <div class="fb-divider"></div>
+                <button type="button" class="fb-create-btn">Create new account</button>
+            </form>
+            <div class="fb-bottom-text">
+                <a href="#">Create a Page</a> for a celebrity, brand or business.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
